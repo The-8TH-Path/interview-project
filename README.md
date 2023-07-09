@@ -10,6 +10,9 @@
 คำสั่งการทำงานใช้อยู่ในไฟล์ object.js
 
 3. query SQL
+SELECT * FROM tb_user, tb_programming_language, tb_title
+WHERE age >= 30
+
 
 4. github command for using
 - ตำสั่งการทำงานของ GitHub ที่เคยใช้ในการทำงานมี เบื้องต้น
