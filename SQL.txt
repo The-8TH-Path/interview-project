@@ -1,0 +1,7 @@
+SELECT tb_title.title_name_th, tb_user.first_name, tb_user.last_name, tb_user.age, tb_user.email ,tb_user.username, tb_programming_language.programming_name_en
+FROM tb_user
+ INNER JOIN tb_title
+  ON tb_title.title_id = tb_user.title_id
+ INNER JOIN tb_programming_language
+  ON tb_programming_language.programming_id = tb_user.programming_id
+WHERE age < 25;
