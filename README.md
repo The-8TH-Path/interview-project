@@ -10,10 +10,10 @@
 คำสั่งการทำงานใช้อยู่ในไฟล์ object.js
 
 3. query SQL
-SELECT * FROM tb_user
+- SELECT * FROM tb_user
 WHERE age < 25
-SELECT * FROM tb_programming_language
-SELECT * FROM tb_title
+- SELECT * FROM tb_programming_language
+- SELECT * FROM tb_title
 
 
 4. github command for using
