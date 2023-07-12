@@ -10,14 +10,13 @@
 คำสั่งการทำงานใช้อยู่ในไฟล์ object.js
 
 3. query SQL
-- SELECT * FROM tb_user
-WHERE age < 25
-- SELECT * FROM tb_programming_language
-- SELECT * FROM tb_title
-    - SELECT DISTINCT tb_title.title_name_th, tb_user.first_name, tb_user.last_name, tb_user.age, tb_user.email, tb_user.username, tb_programming_language.programming_name_en
-    - FROM tb_user
-    - INNER JOIN tb_title, tb_programming_language
-    - WHERE tb_user.age < 25;
+- SELECT DISTINCT tb_title.title_name_th, tb_user.first_name, tb_user.last_name, tb_user.age, tb_user.email, tb_user.username, tb_programming_language.programming_name_en
+- FROM tb_user
+ - INNER JOIN tb_title
+  - ON tb_user.title_id = tb_title.title_id
+ - INNER JOIN tb_programming_language
+  - ON tb_user.programming_id = tb_programming_language.programming_id
+- WHERE tb_user.age < 25;
 
 4. github command for using
 - ตำสั่งการทำงานของ GitHub ที่เคยใช้ในการทำงานมี เบื้องต้น
