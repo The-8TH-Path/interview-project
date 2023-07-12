@@ -10,10 +10,10 @@
 // console.log(toObject(arr));
 // console.log(JSON.stringify(toObject(arr)));
 
-let arr2 = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'];
+let array = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'];
  
-let newArr = arr2.map(function (val, index) {
+let objArr = array.map(function (val, index) {
     return { key: index, value: val };
 })
  
-console.log(newArr);
+console.log(objArr);
